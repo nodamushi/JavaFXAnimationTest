@@ -1,0 +1,51 @@
+.image_info_panel{
+    -fx-background-color:black;
+    -fx-padding:20px 0 20px 20px;
+}
+
+.image_info_panel .label{
+    -fx-text-fill:white;
+    -fx-font:14px "Arial",self;
+}
+
+.contents_info,.slidepanel{
+    -fx-alignment:bottom-left;
+    -fx-padding:0 5px 10px 5px;
+}
+
+/*画像のファイル名*/
+.fname_info{
+    -fx-padding:0 10px 10px 10px;
+
+    /*font-styleで結果が変わらないんだけど、なんで？*/
+    -fx-font-style:italic;
+    
+
+    /*仕方が無いので、書き直し*/
+    -fx-font:italic 14px "Arial",self;
+    -fx-effect:dropshadow( gaussian,#ff0 ,10px, 0, 0,0);
+}
+
+/*画像の説明*/
+.exp_info{
+    -fx-padding:0 10px 0 30px;
+}
+
+/*画像の内側にインナーシャドウ*/
+.contents_img{
+    -fx-effect:innershadow( gaussian, black, 20px , 0,10,0);
+}
+
+.slidebutton{
+    -fx-background-color:rgba(0,0,0,0);
+    -fx-padding:0;
+    -fx-text-fill:gray;
+    /*-fx-rotate:-90;*/
+}
+
+.slidebutton:hover{
+    -fx-text-fill:#608C71;
+   -fx-effect:dropshadow( gaussian,#ff0 ,10px, 0, 0,0);
+}
+
+

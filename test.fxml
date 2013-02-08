@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<HBox prefHeight="-1.0" prefWidth="-1.0" styleClass="image_info_panel" xmlns:fx="http://javafx.com/fxml" fx:controller="test.ImgInfoController">
+  <children>
+    <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="contents_img">
+      <image>
+        <Image url="@example.jpg" />
+      </image>
+    </ImageView>
+    <AnchorPane fx:id="infobox" prefHeight="-1.0" prefWidth="-1.0">
+      <children>
+        <VBox fx:id="contents_info" prefHeight="-1.0" prefWidth="-1.0" styleClass="contents_info" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Label styleClass="fname_info" text="Example.jpg" />
+            <Label styleClass="exp_info" text="info: nodamushiが数年前に書いた絵" />
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <VBox prefHeight="-1.0" prefWidth="-1.0" styleClass="slidepanel">
+      <children>
+        <Button fx:id="sbutton" mnemonicParsing="false" onAction="#slideAction" styleClass="slidebutton" text="▲" />
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@test.css" />
+  </stylesheets>
+</HBox>
